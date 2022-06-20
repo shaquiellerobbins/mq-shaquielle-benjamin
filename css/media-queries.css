@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 0 25px;
+}
+.header-img{
+    width: 900px;
+}
+.header-img img{
+    width: 100%
+}
+h1{
+    flex-basis: 50%;
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    flex-basis: 50%;
+    padding: 25px 0;
+    justify-content: center;
+    align-self: center;
+
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.nav-links {
+    padding-left: 0;
+}
+
+.hidden-on-desktop{
+    display: none;
+}
+h2{
+    padding-bottom: 25px;
+}
+.main{
+    flex-basis: 70%;
+    margin: 25px 0;
+    height: 300px;
+    padding-right: 25px;
+    /*border: 1px solid red;*/
+
+}
+.sub-section{
+    flex-basis: 30%;
+    margin: 25px 0;
+    font-style: italic;
+
+}
+footer{
+    display: inherit;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+}
+#social-media-links{
+    display: flex;
+    flex-grow: .5;
+    justify-items: flex-end;
+}
+p{
+    flex-grow: 50;
+}
+
+@media screen and (max-width: 415px) {
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: block;
+        width: 415px;
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+
+    .hidden-on-desktop {
+        display: block;
+        text-align: center;
+        border: 1px solid gray;
+        background-color: aqua;
+        padding: 25px 0;
+        color: #4b4b4b;
+    }
+
+    .hidden-on-desktop a {
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 0;
+        margin-top: 8px;
+        font-size: 45px;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    li {
+        background-color: lightgray;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .main {
+        width: 100%;
+        display: inline;
+    }
+
+    h2 {
+        margin-top: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    #social-media-links {
+        display: inline-block;
+        margin-left: 125px;
+    }
+
+    footer {
+        padding-top: 50px;
+    }
+}
