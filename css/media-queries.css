@@ -166,4 +166,8 @@ p{
         padding: 0 15px;
         background-color: grey;
     }
+    #social-media-links {
+        display: inline-block;
+        margin-left: 25px;
+    }
 }
