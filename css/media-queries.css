@@ -62,9 +62,11 @@ h2{
 
 }
 footer{
+    min-height: 100px;
     display: inherit;
     flex-wrap: wrap;
     flex-basis: 100%;
+    font-size: 42px;
 
 }
 #social-media-links{
@@ -150,6 +152,11 @@ p{
 
     footer {
         padding-top: 50px;
+        min-height: 50px;
+        display: inherit;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -169,5 +176,13 @@ p{
     #social-media-links {
         display: inline-block;
         margin-left: 25px;
+    }
+    footer{
+        min-height: 10px;
+        display: inherit;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        font-size: 14px;
+    
     }
 }
