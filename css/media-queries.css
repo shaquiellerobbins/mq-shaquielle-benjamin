@@ -10,6 +10,7 @@ body{
     margin: 0 auto;
     font-family: sans-serif;
     padding: 0 25px;
+    background-color: aqua;
 }
 .header-img{
     width: 900px;
@@ -75,7 +76,7 @@ p{
     flex-grow: 50;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 428px) {
 
     * {
         margin: 0;
@@ -87,8 +88,8 @@ p{
         width: 415px;
         margin: 10px 0;
         padding: 0 15px;
+        background-color: chartreuse;
     }
-
     .hidden-on-desktop {
         display: block;
         text-align: center;
@@ -133,7 +134,11 @@ p{
     .header-img {
         width: 100%;
     }
+    .header-img img {
+        width: 100%;
+        
 
+    }
     p {
         display: inline-block;
     }
@@ -145,5 +150,20 @@ p{
 
     footer {
         padding-top: 50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: block;
+        max-width: 300px;
+        min-width: 200px;
+        margin: 10px 0;
+        padding: 0 15px;
+        background-color: grey;
     }
 }
